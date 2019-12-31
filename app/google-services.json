@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "201618949328",
+    "firebase_url": "https://spares-fdba1.firebaseio.com",
+    "project_id": "spares-fdba1",
+    "storage_bucket": "spares-fdba1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201618949328:android:31b90833ecb17d68",
+        "android_client_info": {
+          "package_name": "joslabs.spareshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201618949328-38ibraufvkn0f6kbrcqs0n3049j2gdvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3gcGMBLExXE_jbyWMh79TL_jLSNmKQgA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201618949328:android:896ab60c7c7ac224",
+        "android_client_info": {
+          "package_name": "stylist.com.glamhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201618949328-38ibraufvkn0f6kbrcqs0n3049j2gdvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3gcGMBLExXE_jbyWMh79TL_jLSNmKQgA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="stylist.com.glamhub">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+
+    <uses-permission android:name="com.example.androidmapsv2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/traffic2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity2"
+            android:label="@string/title_activity_login2" />
+        <activity android:name=".InternalDb" />
+        <activity android:name=".Motorregister"
+            android:label="@string/title_activity_register_motor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MotorSearch" />
+        <activity android:name=".SearchBy" />
+        <activity
+            android:name=".MsearchActivity"
+            android:label="@string/title_activity_tow"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutJos"
+            android:label="@string/title_activity_aboutjos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".internetError.NoInternetActivity"
+            android:label="@string/title_activity_no_internet"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".purchasedItems"
+            android:label="ordered items"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OrderSpare"
+            android:label="@string/title_activity_order_spare" />
+        <activity
+            android:name=".SpecicStation"
+            android:label="@string/title_activity_specic_station"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".maps.MapsActivitya"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".towMe.TowmeActivity"
+            android:label="@string/title_activity_towme"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HowtoActivity"
+            android:label="@string/title_activity_howto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menuitems.privacyActivity"
+            android:label="@string/title_activity_privacy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menuitems.Terms"
+            android:label="@string/title_activity_terms"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menuitems.Faqs"
+            android:label="@string/title_activity_faqs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".about.aboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MapsActivity" />
+        <activity
+            android:name=".Verify.VerificationAccount"
+            android:label="@string/title_activity_verification_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".requestPart.RequestPart"
+            android:label="@string/title_activity_request_part"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Feedback.Ordersrequest"
+            android:label="@string/title_activity_ordersrequest"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".finalmap"
+            android:label="@string/title_activity_finalmap" />
+        <activity
+            android:name=".googlemap"
+            android:label="@string/title_activity_googlemap" />
+        <activity
+            android:name=".myorders.PhotoaddActivity"
+            android:label="@string/title_activity_photoadd"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".myorders.BestpriceActivity"
+            android:label="@string/title_activity_bestprice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".myorders.ShowMessage"
+            android:label="@string/title_activity_show_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".myorders.successful.SuccessfulOrderActivity"
+            android:label="@string/title_activity_successful_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Getlocation" />
+        <activity
+            android:name=".fireb.Fireb"
+            android:label="@string/title_activity_fireb"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".NotificationListener" />
+
+        <activity
+            android:name=".Feedback.Firechats"
+            android:label="@string/title_activity_firechats"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Feedback.Fireadmin"
+            android:label="@string/title_activity_fireadmin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Feedback.AdminReply"
+            android:label="@string/title_activity_admin_reply"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".addfuel.FuelEdit"
+            android:label="@string/title_activity_fuel_edit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".about.Moreinfomation"
+            android:label="@string/title_activity_moreinfomation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

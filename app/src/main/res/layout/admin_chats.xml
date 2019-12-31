@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtusername"
+
+        android:layout_alignParentLeft="true"
+        android:text="username"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttime"
+
+
+
+        android:layout_alignParentRight="true"
+        android:text="22.11.2017"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/txturchat"
+        android:layout_below="@id/txtusername"
+        android:text="Thanks missingslice for making my occasion fab...i didnt have sufficient words to express myself but your services did all.."
+        android:layout_weight="1"
+        android:textSize="12dp"
+        android:layout_margin="5dp"
+        android:typeface="normal"
+        android:background="@drawable/chats"
+       />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grayColor"
+       android:layout_below="@id/txturchat"
+        android:layout_margin="4dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/txtuserkey"
+
+        android:visibility="gone"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtuserId"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

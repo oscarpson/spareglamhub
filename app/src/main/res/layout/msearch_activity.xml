@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:id="@+id/layertowme"
+    android:paddingTop="30dp"
+    >
+    <ImageView
+        android:id = "@+id/imgMsearchImage"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+
+        android:src = "@drawable/nature"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id = "@+id/txtMsearchType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgMsearchImage"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/blueColor"
+        android:gravity="center"
+        android:text="Type "
+        android:layout_toEndOf="@id/imgMsearchImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id = "@+id/txtMsearchDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Model"
+        android:layout_below="@id/txtMsearchType"
+        android:gravity="center"
+
+        android:layout_toRightOf="@+id/imgMsearchImage"
+        android:layout_toEndOf="@+id/imgMsearchImage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+
+
+
+    <TextView
+        android:id="@+id/txtMsearchModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="LEXUS SAM"
+
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgMsearchImage"
+        android:layout_toEndOf="@+id/imgMsearchImage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/grayColor"
+    android:layout_marginTop="10dp"
+    android:paddingTop="10dp"
+    android:layout_below="@id/imgMsearchImage"/>
+
+</RelativeLayout>

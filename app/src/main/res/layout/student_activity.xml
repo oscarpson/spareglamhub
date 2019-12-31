@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:id = "@+id/txtsname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textStyle="bold"
+        android:textColor="@color/blueColor"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:text="This is the headline holder. It's Bold to be clearly visible."/>
+
+    <TextView
+        android:id = "@+id/txtsemail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:background="#ff6"
+        android:textColor="@color/back1"
+        android:layout_below="@id/txtsname"
+
+         />
+
+    <TextView
+        android:id="@+id/txtsaddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/back1"
+        android:textStyle="bold"
+
+        android:layout_below="@+id/txtsemail"
+
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id = "@+id/txtsgender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:textColor="@color/back1"
+
+        android:layout_below="@+id/txtsaddress"
+        />
+
+    <TextView
+        android:id = "@+id/txtsphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text = "Show More"
+
+        android:layout_below="@id/txtsgender"
+
+        android:textColor="@color/blueColor"
+        />
+
+
+
+
+    <!-- <ImageView
+         android:id="@+id/imgNewsShare"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/share"
+         android:layout_below="@+id/txtNewsDetails"
+         android:layout_toRightOf="@+id/txtNewsLikeStatistics"
+         android:layout_marginLeft="15dp"/>
+     <TextView
+         android:id="@+id/txtNewsShare"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/imgNewsShare"
+         android:text="Share"
+         android:focusableInTouchMode="false"
+         android:textColor="@color/color_blue"
+         android:textSize ="@dimen/default_text_size"
+         android:layout_marginLeft="10dp"
+         android:layout_alignBottom="@+id/imgNewsShare"/>-->
+
+</RelativeLayout>

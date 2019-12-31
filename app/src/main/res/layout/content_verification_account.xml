@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="stylist.com.glamhub.Verify.VerificationAccount"
+        tools:showIn="@layout/activity_verification_account">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify this account"
+            android:paddingTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/txtverify"
+            android:gravity="center"
+            style="@style/Base.TextAppearance.AppCompat.Headline"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            app:hintAnimationEnabled="false"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:id="@+id/txtphone"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:editable="false"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:foregroundGravity="center_vertical"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:text="Enter:" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="8819"
+
+                android:id="@+id/code"
+                android:layout_toRightOf="@id/txtcode"
+                android:layout_gravity="center_horizontal"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:gravity="center"
+
+                />
+
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="verify"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnverify"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:text="If you did not receive you verification code text this number 0710836007 with you name "/>
+    </LinearLayout>

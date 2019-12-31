@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="stylist.com.glamhub.addfuel.FuelEdit"
+    tools:showIn="@layout/activity_fuel_edit">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:elevation="3dp"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:text="Add fuel Station"
+            android:textAlignment="center"
+            android:id="@+id/txtfhead"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtfhead"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:gravity="center_vertical"
+            android:textAlignment="gravity"
+            android:text="Enter name:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/txtfStationname"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_below="@id/txtfhead"
+            android:id="@+id/edtfstationname"
+
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@id/txtfStationname"
+            android:hint="Nairobi Makena Gulf"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtfStationname"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:gravity="center_vertical"
+            android:textAlignment="gravity"
+            android:text="Petrol price:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/txtfpetrol"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_below="@id/txtfStationname"
+            android:id="@+id/edtfpetrol"
+            android:numeric="integer"
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@id/txtfStationname"
+            android:hint="106"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtfpetrol"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:gravity="center_vertical"
+            android:textAlignment="gravity"
+            android:text="Diesel price:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/txtfdisel"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_below="@id/txtfpetrol"
+            android:id="@+id/edtfdisel"
+            android:numeric="integer"
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@id/txtfStationname"
+            android:hint="50"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtfdisel"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:gravity="center_vertical"
+            android:textAlignment="gravity"
+            android:text="Paraffin price:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/txtfparaffin"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_below="@id/txtfdisel"
+            android:id="@+id/edtfparrafin"
+            android:numeric="integer"
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@id/txtfStationname"
+            android:hint="75"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtfparaffin"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:gravity="center_vertical"
+            android:textAlignment="gravity"
+            android:text="Location details:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/txtflocation"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_below="@id/txtfparaffin"
+            android:id="@+id/edtflocation"
+
+           android:editable="false"
+            android:layout_toRightOf="@id/txtfStationname"
+            android:hint="will be set"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtflocation"
+            android:id="@+id/txtfldetails"
+            android:text="(Turn on gprs to get location details and will be set or you can click below to choose location from a map)"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:text="Choose location"
+           android:layout_below="@id/txtfldetails"
+           android:id="@+id/btnlocation"
+           android:visibility="gone"
+           android:background="@drawable/roundbuttons"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Post"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/btnlocation"
+            android:id="@+id/btnsubmit"
+            android:background="@drawable/roundbuttons"/>
+    </RelativeLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="30dp"
+    android:id="@+id/layerPart"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relaa">
+    <ImageView
+        android:id = "@+id/imgPartImage"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+
+        android:src = "@drawable/nature"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id = "@+id/txtPartPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVehicleModel"
+        android:gravity="center"
+        android:layout_toRightOf="@id/imgPartImage"
+
+        android:textColor="@color/blueColor"
+        android:layout_marginTop="10dp"
+        android:text="Ksh2000"/>
+
+
+    <TextView
+        android:id="@+id/txtVehicleModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="LEXUS SAM 2018"
+        android:textColor="@color/blueColor"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtpartName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/imgPartImage"
+         />
+
+    <TextView
+        android:id = "@+id/txtpartName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgPartImage"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/blueColor"
+        android:gravity="center"
+        android:text="RealLight lamp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/partId"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorAccent"
+    android:layout_below="@id/relaa"
+   />
+
+
+
+    <!-- <ImageView
+         android:id="@+id/imgNewsShare"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/share"
+         android:layout_below="@+id/txtNewsDetails"
+         android:layout_toRightOf="@+id/txtNewsLikeStatistics"
+         android:layout_marginLeft="15dp"/>
+     <TextView
+         android:id="@+id/txtNewsShare"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/imgNewsShare"
+         android:text="Share"
+         android:focusableInTouchMode="false"
+         android:textColor="@color/color_blue"
+         android:textSize ="@dimen/default_text_size"
+         android:layout_marginLeft="10dp"
+         android:layout_alignBottom="@+id/imgNewsShare"/>-->
+
+</RelativeLayout>

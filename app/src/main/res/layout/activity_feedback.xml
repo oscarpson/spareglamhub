@@ -1,0 +1,90 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayoutUpdatesFragmentLayout"
+
+   android:background="@color/grayColor"
+
+    android:backgroundTint="@color/browntint"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layer1"
+
+
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toola"
+
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:visibility="gone"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:paddingBottom="30dp"
+            android:layout_below="@id/toola"
+            android:layout_height="match_parent"
+            android:id ="@+id/updates_recycle_view"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:padding="20dp"
+
+            android:layout_height="wrap_content">
+            <EditText
+                android:paddingLeft="16dp"
+                android:paddingRight="75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/edtFeed"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+
+                android:shadowColor="@color/blueColor"
+                android:hint="Type your feedback"
+                android:background="@android:drawable/editbox_background"
+                />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:drawableTint="@color/blueColor"
+
+                android:id="@+id/btnfeedSend"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/edtFeed"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="bottom"
+
+                android:background="@drawable/feeds"
+                android:foregroundTint="@color/blueColor"
+
+                android:textColor="@android:color/holo_blue_dark"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

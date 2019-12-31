@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:id="@+id/txtsparename"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:textColor="@color/gold"
+                android:text="Gear Box "/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imgcarmodel"
+                android:layout_below="@id/txtsparename"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_model"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtmodelname"
+                android:layout_toRightOf="@id/imgcarmodel"
+                android:layout_below="@id/txtsparename"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/blueColor"
+                android:text="Harrier H4"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imguser"
+                android:layout_below="@id/imgcarmodel"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_user"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtusername"
+                android:layout_toRightOf="@id/imguser"
+                android:layout_below="@id/imgcarmodel"
+                android:textAlignment="gravity"
+                android:textColor="@color/blueColor"
+                android:gravity="center_vertical"
+                android:text="James X"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imgmoney"
+                android:layout_below="@id/imguser"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone"
+                android:src="@drawable/ic_price"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtprice"
+                android:layout_toRightOf="@id/imgmoney"
+                android:visibility="gone"
+                android:layout_below="@id/imguser"
+                android:textAlignment="gravity"
+                android:textColor="@color/blueColor"
+                android:gravity="center_vertical"
+                android:text="Ksh 5000"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imgurset"
+                android:layout_below="@id/imguser"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_price"
+                android:layout_marginRight="10dp"
+                app:civ_border_color="@color/blueColor"
+                app:civ_border_width="1dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txturset"
+                android:layout_toRightOf="@id/imgurset"
+                android:layout_below="@id/imgmoney"
+                android:textColor="@color/blueColor"
+                android:textAlignment="gravity"
+                android:gravity="center_vertical"
+                android:text=" Your set was Ksh 5500"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imgpaid"
+                android:layout_below="@id/imgurset"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_paid"
+                android:layout_marginRight="10dp"
+                app:civ_border_color="@color/blueColor"
+                app:civ_border_width="1dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtpaid"
+                android:layout_toRightOf="@id/imgpaid"
+                android:layout_below="@id/imgurset"
+                android:textColor="@color/blueColor"
+                android:textAlignment="gravity"
+                android:gravity="center_vertical"
+                android:text=" Not paid"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgpaid"
+                android:id="@+id/txttime"
+                android:textAlignment="center"
+                android:textColor="@color/gold"
+                android:text="Date :  11:30 22.07.2017"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

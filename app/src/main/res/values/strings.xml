@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Kenyan Traffic</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="aboutjos">Joslabs is a tech company involved in providing timely solution into the market .
+        Incase of questions or suggestions please email us at joslabs2012@gmail.com or sales@joslabs.co.ke</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_login2">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_feedback">Order Spares</string>
+    <string name="counts">9</string>
+    <string name="title_activity_register_motor">Register here </string>
+    <string name="title_activity_tow">Tow services </string>
+    <string name="title_activity_aboutjos">Tow services </string>
+    <string name="title_activity_pic">PicActivity</string>
+    <string name="title_activity_no_internet">No Internet Connection</string>
+    <string name="title_activity_order_spare">Order Spare</string>
+    <string name="hr">hyu</string>
+    <string name="title_activity_specic_station">Fuel station</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_towme">Towing Services</string>
+    <string name="title_activity_howto">How to use this app</string>
+    <string name="the_map">Use the map to plan the best route out of or into Town. We have used these colors codes:</string>
+    <string name="green">light traffic</string>
+    <string name="orange">Moderate to heaavy traffic</string>
+    <string name="red">heavy snail ups</string>
+    <string name="yellow">uknown</string>
+    <string name="spare">You can also browse for spare parts</string>
+    <string name="petrol">We have added a petrol stations list for the best fuel deals in town</string>
+    <string name="title_activity_privacy">privacy policy</string>
+    <string name="title_activity_terms">Terms</string>
+    <string name="title_activity_faqs">Frequently asked questions</string>
+    <string name="title_activity_about">About the App</string>
+    <string name="title_activity_verification_account">Verification Account</string>
+    <string name="title_activity_request_part">Request Spare</string>
+    <string name="title_activity_ordersrequest">Order Spare</string>
+    <string name="title_activity_finalmap">Map</string>
+    <string name="terms">Terms and Conditions ("Terms")
+
+
+Last updated: 6TH June 2017
+
+Please read these Terms and Conditions (hereafter referred to as; "Terms", "Terms and Conditions") carefully before
+ using and the Kenyan Traffic mobile application (hereafter referred to as; the "Service") operated by
+ JosLaboratories (hereafter referred to as; "us", "we", or "our").
+
+Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+
+By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.
+
+Purchases
+
+If you wish to purchase any product or service made available through the Service ("Purchase"), you may be asked to supply certain information relevant to your Purchase including, without limitation, your phone number, full legal name, precise location and, age.
+
+Subscriptions
+
+Some parts of the Service are billed on a subscription basis ("Subscription(s)"). You will be billed in advance on a recurring amount as will be agreed upon by you before the commencement of the subscription.
+
+Content
+
+Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material ("Content"). You are responsible for the content posted as far as the legal bounds in Kenya will allow. You may not use this service anonymously.
+
+
+
+Links to Other Web Sites
+
+Our Service may contain links to third-party web sites or services that are not owned or controlled by JosLaboratories.
+
+JosLaboratories has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You further acknowledge and agree that JosLaboratories shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
+
+Changes
+
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 10 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+
+DISCLAIMER.
+THIS SERVICE IS PROVIDED WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND/OR NONINFRINGEMENT.
+
+
+Contact Us
+
+If you have any questions about these Terms, please contact us at sales@joslabs.co.ke , or joslabs2012@gmail.com
+
+Please read the latest terms from http://joslabs.co.ke/kenyan-traffic-terms-and-conditions/</string>
+    <string name="title_activity_googlemap">Map</string>
+    <string name="title_activity_photoadd">Add a photo</string>
+    <string name="title_activity_bestprice">Best price</string>
+    <string name="title_activity_show_message">Finalize order</string>
+    <string name="title_activity_successful_order">My successful orders</string>
+    <string name="title_activity_fireb">Fireb</string>
+    <string name="title_activity_firechats">Customer care</string>
+    <string name="title_activity_fireadmin">Fireadmin</string>
+    <string name="title_activity_admin_reply">AdminReply</string>
+    <string name="title_activity_fuel_edit">Add fuel station</string>
+    <string name="title_activity_moreinfomation">Moreinfomation</string>
+</resources>

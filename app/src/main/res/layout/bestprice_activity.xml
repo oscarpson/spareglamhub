@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingRight="10dp"
+                android:text="12:00 22.07.2017 "
+                android:textColor="@color/gold"
+                android:textAlignment="center" />
+
+
+            <ImageView
+                android:id="@+id/imguser"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txttime"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_user"
+               />
+
+            <TextView
+                android:id="@+id/txtusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txttime"
+                android:layout_toRightOf="@id/imguser"
+                android:gravity="center_vertical"
+                android:text="James X"
+                android:textStyle="bold"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textAlignment="gravity"
+                android:textColor="@color/blueColor" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgmoney"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/imguser"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_moneygold"
+                app:civ_border_color="@color/blueColor"
+                app:civ_border_width="1dp"/>
+
+            <TextView
+                android:id="@+id/txtprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imguser"
+                android:layout_toRightOf="@id/imgmoney"
+                android:gravity="center_vertical"
+                android:text="Ksh 5000"
+                android:textAlignment="gravity"
+                android:textColor="@color/blueColor" />
+
+            <ImageView
+                android:id="@+id/imgurset"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/imgmoney"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_manufacturer" />
+
+            <TextView
+                android:id="@+id/txtmanufacturer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgmoney"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/imgurset"
+                android:gravity="center_horizontal"
+                android:text=" Made in Japan"
+                android:textAlignment="gravity"
+                android:textColor="@color/blueColor" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+               android:layout_below="@id/txtprice"
+                android:text="order"
+                android:layout_alignBaseline="@id/txtmanufacturer"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/blueColor"
+                android:gravity="end"
+                android:textAlignment="center"
+                android:id="@+id/btnorder"
+                />
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtorderId"
+    android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtspareId"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtmechId"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

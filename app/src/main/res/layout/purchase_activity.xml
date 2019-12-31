@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layerItem"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:paddingBottom="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+
+    android:paddingTop="30dp">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layeritems"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/txtpartName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="real Lamp."
+        android:textColor="@color/blueColor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtVehicleModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="LEXUS SAM 3829"
+        android:textAlignment="center"
+        android:textColor="@color/blueColor"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtPartPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+
+
+        android:gravity="center"
+        android:text="3000"
+        android:textColor="@color/blueColor" />
+    <TextView
+        android:id="@+id/partId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/btnitemcancel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:visibility="gone"
+
+        android:background="@android:drawable/ic_delete"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layeritems"
+        android:layout_marginTop="10dp"
+
+        android:background="@color/colorAccent"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+
+</RelativeLayout>

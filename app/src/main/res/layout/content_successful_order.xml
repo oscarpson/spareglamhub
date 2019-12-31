@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="stylist.com.glamhub.myorders.successful.SuccessfulOrderActivity"
+    tools:showIn="@layout/activity_successful_order">
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Inverse"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+
+        android:layout_height="231dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="20dp"
+        android:indeterminateDrawable="@android:drawable/progress_horizontal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_below="@id/simpleProgressBar"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="70dp"
+        android:visibility="gone"
+        android:id="@+id/txtprogress"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:text="Quoted orders Loading ...please wait"
+        android:layout_gravity="center_horizontal"
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutUpdatesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/success_recyclerview"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

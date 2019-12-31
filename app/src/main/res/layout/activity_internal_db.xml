@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_internal_db"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="stylist.com.glamhub.InternalDb">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="name"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_edit_text"
+        android:id="@+id/txtiname"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="id No"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/txtiname"
+        android:background="@drawable/rounded_edit_text"
+        android:id="@+id/txtidnumber"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="password"
+        android:layout_below="@id/txtidnumber"
+        android:background="@drawable/rounded_edit_text"
+        android:id="@+id/txtipass"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btniadd"
+
+        android:layout_centerInParent="true"
+        android:layout_below="@id/txtipass"
+        android:background="@drawable/buttonshape"/>
+    <Button
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/btniadd"
+
+        android:id="@+id/btniget"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/txtipass"
+        android:background="@drawable/buttonshape"/>
+
+</RelativeLayout>

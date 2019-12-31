@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_cart"
+        android:orderInCategory="100"
+app:showAsAction="always"
+
+        android:title="About JosMotors"
+        />
+
+
+    <item
+        android:id="@+id/action_privacy"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Our privacy policy"
+        />
+    <item
+        android:id="@+id/action_terms"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Terms and conditions"
+        />
+    <item
+        android:id="@+id/action_howto"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="How to use"
+        />
+    <item
+        android:id="@+id/action_faq"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="FAQ"
+        />
+
+</menu>

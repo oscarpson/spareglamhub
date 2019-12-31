@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@drawable/chats"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtmychat"
+
+        android:text=".can you send your full picture with minimal clothing and update  "
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:textSize="12dp"
+        android:layout_marginBottom="2dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtadminchat"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="Hi aty what?  "
+        android:textSize="12dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttime"
+        android:text="10:22Pm"
+
+        android:textColor="@color/gold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textAlignment="gravity"
+        android:layout_marginTop="5dp"
+
+        android:layout_below="@id/txtadminchat"
+
+        />
+</RelativeLayout>

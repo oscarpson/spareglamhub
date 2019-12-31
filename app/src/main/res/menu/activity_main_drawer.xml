@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/trafficicon"
+
+            android:title="Traffic" />
+
+        <item
+            android:id="@+id/nav_mainregister"
+            android:icon="@drawable/reg"
+            android:title="Register" />
+        <item
+            android:id="@+id/nav_verify"
+            android:icon="@drawable/ic_verified"
+            android:title="Verify" />
+
+
+
+        <item
+            android:id="@+id/nav_success"
+            android:icon="@drawable/ic_acart"
+            android:title="My Orders" />
+
+
+    </group>
+
+
+    <item
+        android:id="@+id/nav_feed"
+        android:icon="@drawable/ic_myorder"
+        android:title="Order spares" />
+    <item
+        android:id="@+id/nav_login"
+        android:icon="@drawable/tome"
+        android:title="Towing services" />
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/shareme"
+        android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/aboutjos"
+                android:title="About Us" />
+    <item
+        android:id="@+id/nav_geo"
+        android:icon="@drawable/ic_action_chats"
+        android:title="customer care" />
+
+
+</menu>

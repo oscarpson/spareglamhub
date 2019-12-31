@@ -1,0 +1,140 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/coordinatorLayoutFuelFragmentLayout"
+    android:layout_height="match_parent"
+
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+       >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/txtfStationname"
+            android:text="Station Name"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:fontFamily="casual"
+android:paddingLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/txtfPetrol"
+
+            android:text="Petrol"
+            android:textStyle="bold"
+            android:textColor="@color/gold"
+            android:textSize="18dp"
+            android:fontFamily="casual"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/txtfStationname"
+            android:layout_alignTop="@+id/txtfStationname" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/txtfdisel"
+            android:text="Diesel"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:fontFamily="casual"
+            android:paddingLeft="5dp"
+            android:layout_toRightOf="@id/txtfPetrol"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/txtfparaffin"
+
+            android:textColor="@color/gold"
+            android:text="Paraffin"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:fontFamily="casual"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_alignTop="@id/txtfdisel"
+            android:layout_toRightOf="@id/txtfdisel"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="5dp"
+            />
+
+</LinearLayout>
+
+        //here
+
+        <ProgressBar
+            android:id="@+id/simpleProgressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Inverse"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+
+            android:layout_height="231dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="20dp"
+            android:indeterminateDrawable="@android:drawable/progress_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:layout_below="@id/simpleProgressBar"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="70dp"
+            android:visibility="gone"
+            android:id="@+id/txtprogress"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:text="Quoted orders Loading ...please wait"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayoutUpdatesFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fuel_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="25dp"></android.support.v7.widget.RecyclerView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/addfuel"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:duplicateParentState="true"
+                app:srcCompat="@drawable/ic_addfuel"
+                app:elevation="3dp"
+                />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

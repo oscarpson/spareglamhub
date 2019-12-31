@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="stylist.com.glamhub.Feedback.AdminReply"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    tools:showIn="@layout/activity_admin_reply">
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rcvreviews"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imgquiz"
+            android:adjustViewBounds="true"
+            android:gravity="bottom"
+
+            android:layout_above="@+id/btncameraSend"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:drawableTint="@color/blueColor"
+
+            android:id="@+id/btncameraSend"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+
+            android:background="@drawable/ic_camera"
+            android:foregroundTint="@color/blueColor"
+
+            android:textColor="@android:color/holo_blue_dark"
+            />
+        <EditText
+            android:paddingLeft="16dp"
+            android:paddingRight="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edtFeed"
+            android:layout_marginBottom="7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/btncameraSend"
+            android:shadowColor="@color/blueColor"
+            android:hint="Type your review"
+            android:background="@android:drawable/editbox_background"
+            />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:drawableTint="@color/blueColor"
+
+            android:id="@+id/btnfeedSend"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/edtFeed"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+
+            android:background="@drawable/ic_chatsend"
+            android:foregroundTint="@color/blueColor"
+
+            android:textColor="@android:color/holo_blue_dark"
+            />
+
+        <ProgressBar
+            android:id="@+id/simpleProgressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Inverse"
+            android:layout_width="fill_parent"
+            android:layout_height="151dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:indeterminateDrawable="@android:drawable/progress_horizontal"
+            android:paddingBottom="16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone"
+            android:id="@+id/txtprogress"
+            android:textSize="25dp"
+            android:textStyle="italic"
+
+            android:text="Getting chats...
+          please wait"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/simpleProgressBar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="31dp" />
+    </RelativeLayout>
+</RelativeLayout>

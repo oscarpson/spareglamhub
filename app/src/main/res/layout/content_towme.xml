@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="horizontal"
+    android:id="@+id/layertowme"
+    android:paddingTop="30dp"
+    >
+    <ImageView
+        android:id = "@+id/imgMsearchImage"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:src = "@drawable/nature"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+    <TextView
+        android:id = "@+id/txtowner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/blueColor"
+        android:gravity="center"
+        android:text="Type "
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:id = "@+id/txttowlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Model"
+
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+    <TextView
+        android:id="@+id/txttowweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="LEXUS SAM"
+android:layout_gravity="center_horizontal"
+        android:gravity="center"
+
+        />
+        <TextView
+            android:id="@+id/txtcall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+         android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/TextAppearance.AppCompat"
+            android:text="please call 0710836007 with the following details\n car type \n_car location \n tow destination"
+
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+</LinearLayout>

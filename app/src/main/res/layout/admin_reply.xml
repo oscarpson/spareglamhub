@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imgview"
+
+        android:src="@drawable/traffic2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtname"
+        android:layout_alignRight="@id/imgview"
+
+
+        android:layout_alignParentRight="true"
+        android:text="22.11.2017"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgview"
+        android:id="@+id/txturchat"
+
+        android:layout_below="@id/imgview"
+        android:text="Thanks missingslice for making my occasion fab...i didnt have sufficient words to express myself but your services did all.."
+        android:layout_weight="1"
+        android:textSize="12dp"
+
+        android:typeface="normal"
+        android:background="@drawable/your_chat"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:id="@+id/txtadminchat"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:textAlignment="gravity"
+        android:layout_below="@id/txtname"
+        android:visibility="gone"
+        android:text="Thanks missingslice for making my occasion fab...i didnt have sufficient words to express myself but your services did all.."
+        android:layout_weight="1"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:background="@drawable/feedserver"/>
+
+
+</RelativeLayout>

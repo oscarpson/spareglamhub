@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtaboutheader"
+    android:textAlignment="center"
+    style="@style/TextAppearance.AppCompat.Body2"
+    android:text="About joslabs"/>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtaboutheader"
+        android:background="#03bd70" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtaboutdata"
+        android:layout_below="@id/view1"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/aboutjos"/>
+
+</RelativeLayout>
